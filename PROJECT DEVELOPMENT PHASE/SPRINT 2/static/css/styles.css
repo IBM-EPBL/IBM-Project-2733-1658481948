@@ -1,0 +1,191 @@
+/* 
+
+Primary Color: #6C63FF;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inner{
+    height: 110%;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 68px -6px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.para{
+    text-align:justify;
+    padding: 80%;
+}
+
+.photo{
+    width: 50%;
+    height: 60%;
+    padding: 0 50px;
+}
+.photo h1{
+    line-height: 50px;
+    padding: 30px;
+}
+.photo1{
+    width: 45%;
+    height: 70%;
+    padding: 20px;
+}
+.photo1 img{
+    width: 125%;
+    height: 150%;
+    padding: 50px;
+
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.user-form{
+    background: #6C63FF;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+.user-form h1{
+    color: #fff;
+    padding: 0 px 0;
+    font-weight: 700;
+}
+.user-form h2{
+    color: #fff;
+    padding: 0 px 0;
+    font-weight: 700;
+}
+
+.user-form i{
+    position: absolute;
+    color: #6C63FF;
+    margin: 25px 10px;
+}
+.user-form img{
+    width: 100%;
+    height: 60%;
+    padding: 20px;
+
+
+}
+input{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    height: 3em;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+.safety{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+.line{
+    height: 6px;
+    border-radius: 20px;
+    width: 20%;
+    background: #fff;
+    margin: 5px;
+}
+span:nth-child(2){
+    background-color: #fffc00;
+}
+span:nth-child(3){
+    background-color: #fffc00;
+}
+.action-btn{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+}
+.btn{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    background: transparent;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.primary{
+    border: none;
+    background: linear-gradient(45deg, rgba(222,197,5,1) 24%, rgba(255,107,0,1) 100%);
+}
+
+
+@media(max-width: 665px){
+    .photo{
+        display: none;
+    }
+    .user-form{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 990px) and (min-width: 665px){
+    .action-btn{
+        margin: 5px;
+        display: block;
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+
+    }
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 8%;
+    height: 1em;
+}
+
+.title{
+    color: white;
+}
+
+.title input{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container{
+    display: block;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 0px;
+    cursor: pointer;
+
+}
+.container label{
+    color: white;
+}

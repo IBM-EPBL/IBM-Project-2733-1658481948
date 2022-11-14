@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../static/css/styles.css">
+</head>
+<body>
+        <div class="inner">
+            <div class="photo">
+                <img src="../static/img/interface.svg">
+                 <h1>UNIVERSITY ADMIT ELIGIBLITY PREDICTOR</h1>
+                 <br>
+                 
+            </div>
+            <div class="user-form">
+                <h1>Welcome! Enter the details given below </h1><br>
+                <form action="/" method="post">
+                    <i class="fas fa-graduation-cap &nbsp;"></i> 
+                    <input type="number" placeholder=" GRE SCORE [250-340]" name="1"   min="250" max="340" required>
+                    <i class="fas fa-book-open"></i> 
+                    <input type="number" placeholder=" TOEFL SCORE [50-120]" name="2" min="50" max="120" required>
+                    <i class="fas fa-school"></i> 
+                    <input type="number" placeholder="  UNIVERSITY RATING [1-5]"  name="3" min="1" max="5" required>
+                     <i class="fas fa-book-reader"></i> 
+                    <input type="number" placeholder=" SOP [1-5]" min="1" max="5" name="4" required>
+                     <i class="fas fa-file-alt"></i> 
+                    <input type="number" placeholder=" LOR [1-5]" min="1" max="5" name="5" required>
+                    <i class="fas fa-user-graduate"></i> 
+                    <input type="number" placeholder=" CGPA [4-10]" min="4" max="10"  name="6" required>
+                     <br>
+                    
+
+
+                    
+                    <!--<div class="safety">
+                        <span>Password strength</span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>-->
+                    <h2>  &#160;Do u have research Experience?</h2>
+                     
+                        <input type="radio" checked="checked" name="7" value="1" >
+                        <span class="checkmark">Yes</span>
+                        <br>
+                 
+                        <input type="radio" checked="checked" name="7" value="0">
+                        <span class="checkmark">No</span>
+                   
+
+                    <div class="action-btn">
+                        <button class="btn primary" >CHECK</button>
+                        <!--<button class="btn">Sign In</button>-->
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
+{% endblock %}
