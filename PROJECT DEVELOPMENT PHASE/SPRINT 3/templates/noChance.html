@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block body %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../static/css/styles.css">
+</head>
+<body>
+        <div class="inner">
+            <div class="photo1">
+                <img src="../static/img/social-girl.svg">
+                 <br>
+            </div>
+            <div class="user-form">
+                <h1>SO SORRY! &#128532;</h1><br>
+                <img src="../static/img/sad.jpg"><br>
+                <h1 class="card-title">You Have LOW Chance!</h1><br>
+                <h1 class="card-text">The model has predicted that you have <strong>{{content[0]}}%</strong> chance</h1>
+            </div>
+        </div>
+</body>
+</html>
+
+{% endblock %}
